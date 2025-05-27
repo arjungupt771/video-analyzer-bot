@@ -1,0 +1,12 @@
+
+streamlit
+opencv-python
+librosa
+numpy
+pandas
+mediapipe
+deepface
+sentence-transformers
+torch
+torchaudio
+whisper
