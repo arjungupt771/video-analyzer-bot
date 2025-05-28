@@ -8,21 +8,6 @@ from utils.video_utils import detect_blink, detect_head_movement, is_facing_forw
 from utils.expression_utils import analyze_confidence
 from utils.scoring import evaluate_technical_answers_with_explanation
 
-qa_set = {
-    "Could you elaborate on your core competencies and key skills ?": "A linked list is a linear data structure where elements are stored in nodes and connected via pointers.",
-    "What activities or responsibilities do you find most fulfilling in your work?": "Polymorphism is the ability of different objects to respond uniquely to the same method call.",
-    "Could you provide an overview of your educational qualifications and professional experience ?":"",
-    "Can you share some of your significant achievements and how they were accomplished?":"",
-    "What are your aspirations for the future, both professionally and personally ?":""
-}
-
-# # Setup MediaPipe face mesh
-# mp_face_mesh = mp.solutions.face_mesh
-# mp_pose = mp.solutions.pose
-# face_mesh = mp_face_mesh.FaceMesh(static_image_mode=True)
-# pose_detector = mp_pose.Pose(static_image_mode=True)
-
-
 # --- Streamlit UI ---
 st.title("🎥 Confidence Analyzer for Interview Videos")
 st.markdown("Upload interview recordings. We'll score each candidate based on facial expressions and eye contact.")
